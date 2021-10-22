@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: hsl(240, 9%, 89%);
+}
+
+body {
+  width: 1366px;
+  height: 720px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: #202024;
+}
+
+.pink {
+  position: absolute;
+  top: 0%;
+  right: 28%;
+  z-index: 0;
+}
+
+.yellow {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  z-index: 0;
+}
+
+.range {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+}
+
+.broke {
+  position: absolute;
+  top: 9.75rem;
+  z-index: 2;
+}
+
+main {
+  background: url(images/Mobile.png);
+  width: 358px;
+  height: 540px;
+  z-index: 1;
+}
+
+.container {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.7rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  object-fit: cover;
+  clip-path: polygon(51% 0, 100% 29%, 100% 75%, 51% 100%, 0 75%, 0 23%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+ul a:hover {
+  transition: all 0.1s ease-in-out 0.1s;
+  border: solid 2px #fff;
+}
